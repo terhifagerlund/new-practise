@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import Grid from '@material-ui/core/Grid';
+import AppBarCustom from './AppBarCustom';
+import CenterBackground from './CenterBackground';
+import BottomBackground from './BottomBackground';
+import UpperBackground from './UpperBackground';
 
-const App: React.FC = () => {
+
+const Container = styled.div`
+  height: 100%;
+  `;
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <Grid item>
+        <AppBarCustom></AppBarCustom>
+        <UpperBackground></UpperBackground>
+        <CenterBackground></CenterBackground>
+        <BottomBackground></BottomBackground>
+      </Grid>
+    </Container>
+  )
 }
 
-export default App;
+
