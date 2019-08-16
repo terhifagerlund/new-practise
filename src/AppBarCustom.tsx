@@ -21,12 +21,10 @@ const AppBarStyle = styled.div`
 
 const ButtonAling = styled.div`
   text-align: right;
-  text-transform: uppercase;
 `;  
 
 const YellowFont = styled.span`
   color: #FFD43D;
-  text-transform: uppercase;
 `;
 
 export default function AppBarCustom() {
@@ -39,10 +37,10 @@ export default function AppBarCustom() {
             <Grid item xs={8}>
               <ButtonAling>
                 <Button>
-                  <YellowFont>home</YellowFont>
+                  <YellowFont>Home</YellowFont>
                 </Button>
-                <Button>works</Button> 
-                <Button>contacts</Button> 
+                <Button>Works</Button> 
+                <Button>Contacts</Button> 
               </ButtonAling>
             </Grid>
           </Toolbar>
