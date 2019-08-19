@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import { Typography } from '@material-ui/core';
 
 const FourBox = styled.div`
   background-color: #F2F2F2; 
@@ -20,7 +21,6 @@ const Header = styled.div`
   margin-top: 40px;
   padding-bottom: 10px;  
   text-align: left;
-  font-weight: bold;
   `;
 
 const Paragraph = styled.div`
@@ -38,8 +38,8 @@ export default function SkillsStyle(props: any) {
           <Grid item>
             <Header>{props.title}</Header>
           </Grid>
-          <Grid item>
-            <Paragraph>{props.body}</Paragraph>
+          <Grid item component={Paragraph}>
+          <Typography variant="body1">{props.body}</Typography>
           </Grid>
         </Grid>
       </FourBox>   

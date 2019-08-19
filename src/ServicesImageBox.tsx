@@ -16,9 +16,9 @@ const ServicesBox = styled.div`
 
 const Image = styled.div`
   background-image: url(${qa_background});
-  height: 350px;
+  height: 375px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 18px;
   `;
 
 const ImageIcon = styled.div`
@@ -50,10 +50,10 @@ export default function ServicesImage() {
             <Image>
               <ImageIcon></ImageIcon>
               <Grid item xs={12}>
-                <Typography variant="h3" component={headerText}>Quality Assurance</Typography>
+                <Typography variant="h4" component={headerText}>Quality Assurance</Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="subtitle1" component={TextStyle}>This is a paragraph. To edit this paragraph,
+                <Typography variant="body1" component={TextStyle}>This is a paragraph. To edit this paragraph,
                 highlight the text and <br></br>replace it with your own fresh content.</Typography>
               </Grid>
               <Grid item xs={12}>

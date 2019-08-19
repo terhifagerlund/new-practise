@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import hero_background from './assets/backgrounds/hero_background.png';
 import { Grid, Typography, Button } from '@material-ui/core';
 
+
 const HeroBackground = styled.div`
   background-image: url(${hero_background});
   background-size: auto;
@@ -18,10 +19,11 @@ const HeroBackground = styled.div`
     background-color: #FFF;
     padding: 45px;
     `;
-
+    
   const Paragraph = styled.div`
-    padding: 20px;
-    `;
+  padding: 20px;
+  `;
+    
 
 export default function HeroPartition() {
     return (
@@ -29,7 +31,7 @@ export default function HeroPartition() {
           <Grid item xs={10}>
             <HeaderText>
               <Typography variant="h4">WE BUILD CODE</Typography>
-              <Paragraph>This is a paragraph. You can use this to communicate content within your page.</Paragraph>
+              <Typography variant="body1" component={Paragraph}>This is a paragraph. You can use this to communicate content within your page.</Typography>
               <Button variant="contained" color="primary">Learn more</Button>
             </HeaderText>
           </Grid> 

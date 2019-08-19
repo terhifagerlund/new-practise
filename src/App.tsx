@@ -6,7 +6,8 @@ import AppBarCustom from './AppBarCustom';
 import HeroPartition from './HeroPartition';
 import ServicesPartition from './ServicesPartition';
 import SkillsPartition from './SkillsPartition';
-
+import { ThemeProvider } from '@material-ui/styles';
+import theme from './theme';
 
 const Container = styled.div`
   height: 100%;
@@ -14,14 +15,16 @@ const Container = styled.div`
 
 export default function App() {
   return (
-    <Container>
-      <Grid item>
-        <AppBarCustom></AppBarCustom>
-        <HeroPartition></HeroPartition>
-        <ServicesPartition></ServicesPartition>
-        <SkillsPartition></SkillsPartition>
-      </Grid>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Grid item>
+          <AppBarCustom></AppBarCustom>
+          <HeroPartition></HeroPartition>
+          <ServicesPartition></ServicesPartition>
+          <SkillsPartition></SkillsPartition>
+        </Grid>
+      </Container>
+    </ThemeProvider>
   )
 }
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 
 const ServicesBox = styled.div`
   background-color: #FFF; 
@@ -21,7 +21,6 @@ const Header = styled.div`
   margin-top: 40px;
   padding-bottom: 10px;  
   text-align: left;
-  font-weight: bold;
   `;
 
 const Paragraph = styled.div`
@@ -39,8 +38,8 @@ export default function ServicesStyle(props: any) {
           <Grid item>
             <Header>{props.title}</Header>
           </Grid>
-          <Grid item>
-            <Paragraph>{props.body}</Paragraph>
+          <Grid item component={Paragraph}>
+            <Typography variant="body1">{props.body}</Typography>
           </Grid>
           <Button variant="contained" color="primary">Learn more</Button>
         </Grid>

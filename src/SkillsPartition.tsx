@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 import { Typography, Button } from '@material-ui/core';
+import TrendingFlatBlack from '@material-ui/icons/TrendingFlat';
 import Skills from './Skills';
 import html5_icon from './assets/icons/html5_icon.png';
 import bugfree_icon from './assets/icons/bugfree_icon.png';
@@ -26,12 +27,12 @@ const TwoTextBox = styled.div`
   text-align: left;                  
   `;
 
-const ButtonStyled = styled.div`
-  padding-top: 20px;
-`;
-
 const TextPaddings = styled.div`
   padding-top: 20px;  
+`;
+
+const ButtonStyle = styled.div`
+padding: 20px;
 `;
 
 export default function SkillsPartition() {
@@ -48,12 +49,12 @@ export default function SkillsPartition() {
                   <Typography variant="h4" >Performance Reports</Typography>
                 </Grid>
                 <TextPaddings>
-                  <Typography variant="subtitle1" >This is a paragraph. To edit
+                  <Typography variant="body1" >This is a paragraph. To edit
                   this paragraph, highlight the text and replace it with your own fresh content.</Typography>
                 </TextPaddings>
-                <ButtonStyled>
-                  <Button variant="contained" color="primary">--></Button>
-                </ButtonStyled>
+                <Button color="primary" variant="contained">
+                  <TrendingFlatBlack></TrendingFlatBlack>
+                </Button>
               </TwoTextBox>
             </Grid>
             <Grid item xs={5}>
@@ -62,12 +63,12 @@ export default function SkillsPartition() {
                   <Typography variant="h4">Continuous Delivery</Typography>
                 </Grid>
                 <TextPaddings>
-                  <Typography variant="subtitle1" >This is a paragraph. To edit
+                  <Typography variant="body1" >This is a paragraph. To edit
                   this paragraph, highlight the text and replace it with your own fresh content.</Typography>
                 </TextPaddings>
-                <ButtonStyled>
-                  <Button variant="contained" color="primary">--></Button>
-                </ButtonStyled>
+                <Button color="primary" variant="contained">
+                  <TrendingFlatBlack></TrendingFlatBlack>
+                  </Button>
               </TwoTextBox>
             </Grid>
           </Grid>
@@ -93,9 +94,9 @@ export default function SkillsPartition() {
               </Grid>
             </Grid>
           </Grid>
-          <ButtonStyled>
-            <Button variant="contained" color="primary">Learn more</Button>
-          </ButtonStyled>
+          <ButtonStyle>
+          <Button variant="contained" color="primary">Learn more</Button>
+          </ButtonStyle>
         </SkillsBackground>
     </Grid>
   );
