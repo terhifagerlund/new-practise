@@ -23,9 +23,6 @@ const ButtonAling = styled.div`
   text-align: right;
 `;  
 
-const YellowFont = styled.span`
-  color: #FFD43D;
-`;
 
 export default function AppBarCustom() {
     return (
@@ -36,9 +33,7 @@ export default function AppBarCustom() {
             </Grid>
             <Grid item xs={8}>
               <ButtonAling>
-                <Button>
-                  <YellowFont>Home</YellowFont>
-                </Button>
+                <Button color="primary">Home</Button>
                 <Button>Works</Button> 
                 <Button>Contacts</Button> 
               </ButtonAling>
