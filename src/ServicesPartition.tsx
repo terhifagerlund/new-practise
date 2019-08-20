@@ -30,7 +30,7 @@ export default function ServicesPartition() {
           <Typography variant="h4" component={Header}>SERVICES</Typography>
         </Grid>
         <ServiceBackground>
-          <Grid item xs={10}>
+          <Grid item xs={10} md={8}>
               <Grid container>
                 <Grid item xs={3}>
                   <Services backgroundImage={php_icon} title="Wordpress Based" body="This is a paragraph. To edit

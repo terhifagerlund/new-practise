@@ -36,12 +36,14 @@ export default function ServicesStyle(props: any) {
             <IconImage poop={props.backgroundImage}></IconImage>
           </Grid>
           <Grid item>
+            <Typography variant="h3">
             <Header>{props.title}</Header>
+            </Typography>
           </Grid>
           <Grid item component={Paragraph}>
             <Typography variant="body1">{props.body}</Typography>
           </Grid>
-          <Button variant="contained" color="primary">Learn more</Button>
+            <Button variant="contained"color="primary" size="small">Learn more</Button>
         </Grid>
       </ServicesBox>   
     );

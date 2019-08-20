@@ -50,7 +50,7 @@ export default function ServicesImage() {
             <Image>
               <ImageIcon></ImageIcon>
               <Grid item xs={12}>
-                <Typography variant="h4" component={headerText}>Quality Assurance</Typography>
+                <Typography variant="h2" component={headerText}>Quality Assurance</Typography>
               </Grid>
               <Grid item xs={12}>
                 <Typography variant="body1" component={TextStyle}>This is a paragraph. To edit this paragraph,

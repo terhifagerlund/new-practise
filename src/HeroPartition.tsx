@@ -28,10 +28,10 @@ const HeroBackground = styled.div`
 export default function HeroPartition() {
     return (
         <HeroBackground>
-          <Grid item xs={10}>
+          <Grid item xs={10} md={8}>
             <HeaderText>
               <Typography variant="h4">WE BUILD CODE</Typography>
-              <Typography variant="body1" component={Paragraph}>This is a paragraph. You can use this to communicate content within your page.</Typography>
+              <Typography variant="body2" component={Paragraph}>This is a paragraph. You can use this to communicate content within your page.</Typography>
               <Button variant="contained" color="primary">Learn more</Button>
             </HeaderText>
           </Grid> 

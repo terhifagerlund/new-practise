@@ -36,7 +36,9 @@ export default function SkillsStyle(props: any) {
             <IconImage poop={props.backgroundImage}></IconImage>
           </Grid>
           <Grid item>
-            <Header>{props.title}</Header>
+            <Typography variant="h3">
+              <Header>{props.title}</Header>
+            </Typography>
           </Grid>
           <Grid item component={Paragraph}>
           <Typography variant="body1">{props.body}</Typography>
